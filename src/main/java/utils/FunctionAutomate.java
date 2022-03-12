@@ -6,7 +6,10 @@ import java.util.function.Function;
 public class FunctionAutomate {
     private Function<Double, Double> myFunctionToAutomate;
 
-    public void perfomeMultipleCalculation(double initialX, double finalX, double step) throws IOException {
+    public void perfomeMultipleCalculation(double initialX, double finalX, double step) throws IOException, NullPointerException {
+        if(myFunctionToAutomate == null) {
+            throw new NullPointerException("There is no function defined! \n Use setMyFunctionToAutomate(foo) for definition.");
+        }
         double x = initialX;
         double resX = 0;
         while ( x < finalX + step ) {
