@@ -2,7 +2,7 @@ package functions.basic;
 
 import utils.Factorial;
 
-public strictfp class SinFunction extends TaylorSeries {
+public class SinFunction extends TaylorSeries {
 
     public SinFunction(long termsNum) {
         super(termsNum);

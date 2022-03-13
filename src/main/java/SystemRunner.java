@@ -24,6 +24,7 @@ public class SystemRunner {
             double log_5_v = log_5.apply(x);
             double log_10_v = log_10.apply(x);
 
+
             res = (((((log_5_v * log_2_v) - log_2_v) * log_10_v) * log_2_v) - log_5_v);
         }
         return res;

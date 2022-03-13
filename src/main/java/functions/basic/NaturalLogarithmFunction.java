@@ -1,6 +1,6 @@
 package functions.basic;
 
-public strictfp class NaturalLogarithmFunction extends AbstractDifferentlyBasedLogarithm {
+public class NaturalLogarithmFunction extends AbstractDifferentlyBasedLogarithm {
 
     public NaturalLogarithmFunction(long termsNum, double a) {
         super(termsNum, a);
